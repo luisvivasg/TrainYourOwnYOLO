@@ -4,8 +4,8 @@ from functools import wraps
 
 import numpy as np
 import tensorflow as tf
-from keras import backend as K
-from keras.layers import (
+from tensorflow.keras import backend as K
+from tensorflow.keras.layers import (
     Conv2D,
     Add,
     ZeroPadding2D,
@@ -13,10 +13,10 @@ from keras.layers import (
     Concatenate,
     MaxPooling2D,
 )
-from keras.layers.advanced_activations import LeakyReLU
-from keras.layers.normalization import BatchNormalization
-from keras.models import Model
-from keras.regularizers import l2
+from tensorflow.keras.layers.advanced_activations import LeakyReLU
+from tensorflow.keras.layers.normalization import BatchNormalization
+from tensorflow.keras.models import Model
+from tensorflow.keras.regularizers import l2
 
 from ..yolo3.utils import compose
 
